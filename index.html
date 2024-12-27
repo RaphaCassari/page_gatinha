@@ -27,7 +27,7 @@
             justify-content: center;
             align-items: center;
             position: relative;
-            height: 80vh;
+            height: 70vh;
             width: 100%;
             overflow: hidden;
         }
@@ -52,6 +52,12 @@
             line-height: 1.8;
             color: #fff5f7;
             text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+            max-width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            background: rgba(255, 87, 125, 0.8);
+            border-radius: 10px;
+            padding: 15px;
         }
 
         @keyframes fall {
@@ -126,7 +132,7 @@
             }
 
             .carousel {
-                height: 60vh;
+                height: 50vh;
             }
 
             .carousel img {
@@ -137,6 +143,10 @@
 </head>
 
 <body>
+    <audio autoplay loop>
+        <source src="https://raphacassari.github.io/page_gatinha/music.mp3" type="audio/mpeg">
+        Seu navegador não suporta o elemento de áudio.
+    </audio>
     <div id="loading">Carregando amor...</div>
     <h1>Para Nós Dois</h1>
     <div class="carousel">
