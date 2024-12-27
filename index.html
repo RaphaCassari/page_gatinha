@@ -161,6 +161,13 @@
     </div>
 
     <script>
+
+        window.addEventListener('load', function () {
+            var audio = document.getElementById('background-audio');
+            audio.play().catch(function (error) {
+                console.log('Autoplay foi bloqueado. Clique para iniciar o áudio.');
+            });
+        });
         // Loading screen
         window.addEventListener('load', () => {
             document.getElementById('loading').classList.add('hidden');
