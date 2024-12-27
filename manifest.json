@@ -1,0 +1,20 @@
+{
+    "short_name": "Romance",
+    "name": "Página Romântica",
+    "icons": [
+      {
+        "src": "icon.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "icon.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#ff758c",
+    "theme_color": "#ff758c"
+  }
