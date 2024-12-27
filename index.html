@@ -143,7 +143,7 @@
 </head>
 
 <body>
-    <audio autoplay loop>
+    <audio id="background-audio" loop>
         <source src="https://raphacassari.github.io/page_gatinha/music.mp3" type="audio/mpeg">
         Seu navegador não suporta o elemento de áudio.
     </audio>
@@ -161,15 +161,15 @@
     </div>
 
     <script>
-
-        window.addEventListener('load', function () {
+        // Loading screen
+        window.addEventListener('load', () => {
             var audio = document.getElementById('background-audio');
             audio.play().catch(function (error) {
                 console.log('Autoplay foi bloqueado. Clique para iniciar o áudio.');
+                document.body.addEventListener('click', function () {
+                    audio.play();
+                }, { once: true });
             });
-        });
-        // Loading screen
-        window.addEventListener('load', () => {
             document.getElementById('loading').classList.add('hidden');
         });
 
